@@ -12,14 +12,20 @@ read fileName #recieves user input and saves it as fileName
 #prompt the user to input a regular expression
 echo "Enter a regular expression: "
 read regExp #receives user input and saves it as regExp
+##########################################################
+#Problem 2 Code:
 
 #search the file with the given regular expression
 grep $regExp $fileName
+##########################################################
+#Problem 3 Code:
 
 #Output the number of phone numbers in "regex_practice.txt"
 echo "Number of phone numbers in regex_practice.txt: "
 #The phone number is patterned such that ###-###-####
 egrep -c [0-9]{3}-[0-9]{3}-[0-9]{4} regex_practice.txt
+##########################################################
+#Problem 4 Code:
 
 #Output the number of emails in "regex_practice.txt"
 echo "Number of emails in regex_practice.txt: "
